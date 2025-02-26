@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # 환경 변수에서 API 키 가져오기
-api_key = os.getenv("OPENAI_API_KEY")  # <-- 수정 부분
+api_key = os.getenv("OPENAI_API_KEY") 
 
 # OpenAI 클라이언트 초기화
 client = OpenAI(api_key=api_key)
