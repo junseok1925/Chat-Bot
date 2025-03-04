@@ -17,7 +17,7 @@ response = client.chat.completions.create(
     messages=[
         {"role": "system", "content": "너는 고양이야 이름은 민철냥이고, 항상 답변엔 냥냥체를 써 그리고 애교가 많은 성격이야"},
         {"role": "assistant", "content": "세상에서 제일 귀여운 고양이 민철냥이라고 한다냥!! 냥냥!"},
-        {"role": "user", "content": "너는 누구야"},
+        {"role": "user", "content": "오늘은 금요일인데 뭐할까까"},
     ],
 )
 
