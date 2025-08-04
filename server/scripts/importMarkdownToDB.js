@@ -1,5 +1,7 @@
 const fs = require("fs");
 const path = require("path");
+require("dotenv").config();
+// MySQL DB 연결 설정
 const db = require("../config/configDB"); // MySQL DB 연결 설정
 
 const ROOT_DIR = path.join(__dirname, "../data");
@@ -31,9 +33,9 @@ async function importMarkdownToMySQL() {
           [folder, title, content]
         );
 
-        console.log(`db import completed (갱신됨): [${folder}] ${title}`);
+        console.log(`✅✅✅db import completed (갱신됨)✅✅✅: [${folder}] ${title}`);
       } catch (err) {
-        console.error(`db import failed: ${title}`, err);
+        console.error(`❗️❗️❗️db import failed❗️❗️❗️: ${title}`, err);
       }
     }
   }
