@@ -1,4 +1,4 @@
-// config/openai.js
+require("dotenv").config();
 
 const OpenAI = require("openai");
 
